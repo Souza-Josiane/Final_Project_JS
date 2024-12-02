@@ -1,0 +1,62 @@
+.aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profileSection,
+.skillsSection,
+.hobbiesSection  {
+    border-bottom: 2px solid #DFC0C0;
+}
+
+.profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+    border: 4px solid #5E3535;
+}
+
+.bio {
+    max-width: 800px;
+}
+.h1 {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+.h1, .h2 {
+    color: #5E3535;
+    font-weight: bold;
+}
+
+.h2 {
+    margin-bottom: 10px;
+}
+
+.skillsSection, .hobbiesSection {
+    margin-bottom: 40px;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.skillsAbout {
+    list-style: none;
+    padding: 0;
+}
+
+.skillsAbout li {
+    margin: 10px 0;
+}

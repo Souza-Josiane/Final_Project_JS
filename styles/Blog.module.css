@@ -1,0 +1,82 @@
+/*
+Base color: #D87A7A
+Lighter tone: #DFC0C0
+Medium tone: #BFA4A4
+Darkest tone: #5E3535
+Highlight: #A65D5D
+*/
+
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #DFC0C0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #BFA4A4;
+}
+
+.article {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #5E3535;
+}
+
+.article h2 {
+    font-size: 1.6rem;
+    color: #A65D5D;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #DFC0C0;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5E3535;
+    margin-bottom: 1rem;
+}
+
+.article ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    color: #5E3535;
+}
+
+.article ul li {
+    margin-bottom: 0.5rem;
+}
+
+.article strong {
+    color: #D87A7A;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .blogContainer {
+        padding: 1rem;
+    }
+
+    .article h2 {
+        font-size: 1.5rem;
+    }
+
+    .article p {
+        font-size: 0.95rem;
+    }
+}
+
+.articleImage {
+    width: 70%; /* Reduces width */
+    max-width: 400px; /* Sets a maximum limit */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 8px;
+    margin: 16px auto; /* Center the image */
+    display: block; /* Ensures the image is treated as a block */
+    border: 2px solid #DFC0C0;
+    box-shadow: 0 4px 6px #5E3535; /* Add a soft shadow effect */
+}

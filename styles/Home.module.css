@@ -1,0 +1,152 @@
+/* styles/Home.module.css */
+
+/* Name: Josiane Nazaria De Souza
+Student ID: 200547851
+Email: 200547851@student.georgianc.on.ca */
+
+.main {
+  background-color: #FFFFFF;
+  font-size: 1rem;
+}
+
+.title {
+  color: #5E3535;
+  font-size: 25px !important;
+  letter-spacing: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0px 4px 6px #A65D5D;
+}
+
+.description {
+  font-size: 25px !important;
+  padding: 10px;
+}
+
+.main,
+.portfolioContainer,
+.contactContainer {
+  text-align: center;
+  margin: 0 auto;
+  min-width: 390px;
+  max-width: 1080px;
+  padding: 20px;
+  /* background-color: red; */
+}
+
+.ctaContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.projectCards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #5E3535;
+  border-radius: 8px;
+  text-align: left;
+  width: 250px;
+  background-color: #DFC0C0;
+  color: #A65D5D;    
+}
+
+.h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px;
+
+  font-family: 'Raleway', sans-serif; /* 400 by default */
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-shadow: 0px 4px 6px #A65D5D;
+}
+
+.h2 {
+  text-align: center;
+  color: #A65D5D;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0px 4px 6px #DFC0C0;
+}
+
+.h3 {
+  color: #5E3535;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  text-shadow: 0px 4px 6px #5E3535;
+}
+
+.p {
+  padding: 5px;
+}
+
+.card,
+.skillsHome {
+  box-shadow: 15px 15px 15px #DFC0C0;
+}
+
+.skillsListHome {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.skillsListHome div {
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: #A65D5D;
+  color: #DFC0C0;
+  border: #5E3535;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 0 5px #DFC0C0;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+  
+/* app/components/Footer.module.css */
+.footer {
+    background-color: #5E3535;
+    color: #DFC0C0;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .navList li {
+    display: inline;
+  }
+  
+  .navList a {
+    color: #DFC0C0;
+    text-decoration: none;
+  }
+  
+  

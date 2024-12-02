@@ -1,0 +1,139 @@
+.portfolioContainer {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin-top: 2rem;
+}
+
+.portfolioIntro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.project {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.h1 {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    color: #5E3535;
+}
+
+.h1, .h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    color: #A65D5D;
+    font-size: 1.2rem;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #DFC0C0;
+    color: #A65D5D;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #BFA4A4;
+    transform: scale(1.1);
+}
+
+
+/* Scraper Section */
+.scraperSection {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.scraperSection:hover {
+    transform: translateY(-5px);
+}
+
+.scraperTitle,
+.timezoneTitle,
+.weatherCity {
+    font-weight: bold;
+    color: #D87A7A;
+    margin-bottom: 1rem;
+}
+
+.scraperParagraph,
+.timezoneDatetime,
+.weatherDescription,
+.weatherTemperature {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #5E3535;
+}
+
+.loading {
+    font-weight: bold;
+}
+
+/* Timezone Section */
+.timezoneForm {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+.input {
+    padding: 5px;
+    font-size: 1rem;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #DFC0C0;
+}
+
+.input:focus {
+    outline: none; /* Removes the default outline */
+    border: 2px solid #BFA4A4; /* Color of the border when in focus */
+}
+
+.timezoneSection {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,89 @@
+// Name: Josiane Nazaria De Souza
+// Student ID: 200547851
+// Email: 200547851@student.georgianc.on.ca
+
+// app/index.js
+import Link from "next/link";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Navbar from "./components/Navbar";
+import Navfooter from "./components/Navfooter";
+import "./globals.css";
+
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Home Page</title>
+        <meta name="keywords" content="Next.js, Students, Project" />
+        <meta
+          name="description"
+          content="This is the home page of my Next.js application"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.icon" sizes="any" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+
+      <Navbar />
+      <main className={styles.main}>
+        <h1 className={styles.title}>Welcome to my personal website!</h1>
+        <p className={styles.description}>
+          Welcome to my personal website! Here, I showcase my projects, skills,
+          and work experience. Feel free to explore and get in touch.
+        </p>
+
+        <div className={styles.ctaContainer}>
+          <Link href="/about">
+            <button className={styles.btn}>More About Me</button>
+          </Link>
+          <Link href="/portfolio">
+            <button className={styles.btn}>My Portfolio</button>
+          </Link>
+        </div>
+
+        <section className={styles.projects}>
+          <h2 className={styles.h2}>Featured Projects</h2>
+          <div className={styles.projectCards}>
+            <div className={styles.card}>
+              <h3 className={styles.h3}>Assignment 1</h3>
+              <p className={styles.p}>Environment Setup, Git Setup, Project Setup,
+                Running the 1st JS application on a Live Server.</p>
+              <Link href="/portfolio/project1">
+                <button className="btn btn-outline-primary">Learn More</button>
+              </Link>
+            </div>
+            <div className={styles.card}>
+              <h3 className={styles.h3}>Assignment 2</h3>
+              <p className={styles.p}>Develop Architecture for API, and System Design,
+                Database Schema Design, Assets Collection, Content Creation.</p>
+              <Link href="/portfolio/project2">
+                <button className="btn btn-outline-primary">Learn More</button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.skillsHome}>
+          <h2 className={styles.h2}>Skills & Technologies</h2>
+          <div className={styles.skillsListHome}>
+            <div>React</div>
+            <div>Node.js</div>
+            <div>Next.js</div>
+            <div>HTML & CSS</div>
+          </div>
+        </section>
+        
+      </main>
+      <Navfooter />
+      
+    </div>
+    
+  );
+}

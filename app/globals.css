@@ -1,0 +1,60 @@
+/* Name: Josiane Nazaria De Souza
+Student ID: 200547851
+Email: 200547851@student.georgianc.on.ca */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #BFA4A4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #BFA4A4;
+  }
+}
+
+.header {
+  background-color: #D87A7A;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #A65D5D;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.btn-outline-primary {
+  border-color: #A65D5D;
+  color: #A65D5D;
+  margin: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s;
+  box-shadow: 0 0 5px #DFC0C0;
+}
+
+.btn-outline-primary:hover {
+  border-color: #A65D5D;
+  background-color: #DFC0C0;
+  color: #A65D5D;
+  transform: scale(1.1);
+}
+
+main p,
+div > p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}

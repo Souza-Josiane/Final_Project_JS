@@ -1,0 +1,88 @@
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #DFC0C0; /* Lighter tone */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #5E3535;
+}
+
+.h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #5E3535; /* Darkest tone */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #5E3535;
+    font-weight: bold;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #5E3535;
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #A65D5D; /* Highlight */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #5E3535;
+    background-color: #FFFFFF; /* Mantém legibilidade */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #D87A7A; /* Base color */
+    box-shadow: 0 0 5px #5E3535;
+}
+
+textarea.form-control {
+    resize: none; /* Impede redimensionamento */
+}
+
+/* Botão */
+.btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #A65D5D; /* Highlight */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #5E3535; /* Darkest tone */
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .aboutContainer {
+        padding: 15px;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        background-color: #DFC0C0;
+        color: #5E3535;
+    }
+}
