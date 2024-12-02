@@ -2,7 +2,7 @@
 // Student ID: 200547851
 // Email: 200547851@student.georgianc.on.ca
 
-// app/index.js
+// app/page.js
 import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Josiane's Web Development Portfolio</title>
+        <title>Josiane&apos;s Web Development Portfolio</title>
         <meta name="keywords" content="Next.js, portfolio, technology, web development" />
         <meta name="description" content="Josiane's Portfolio showcasing projects and blog about technology" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,18 +52,16 @@ export default function Home() {
           <h2 className={styles.h2}>Featured Projects</h2>
           <div className={styles.projectCards}>
             <div className={styles.card}>
-              <h3 className={styles.h3}>Assignment 1</h3>
-              <p className={styles.p}>Environment Setup, Git Setup, Project Setup,
-                Running the 1st JS application on a Live Server.</p>
-              <Link href="/portfolio/project1">
+              <h3 className={styles.h3}>Web Scraper</h3>
+              <p className={styles.p}>A simple web scraper built with Next.js, scraping data from a website.</p>
+              <Link href="/portfolio">
                 <button className="btn btn-outline-primary">Learn More</button>
               </Link>
             </div>
             <div className={styles.card}>
-              <h3 className={styles.h3}>Assignment 2</h3>
-              <p className={styles.p}>Develop Architecture for API, and System Design,
-                Database Schema Design, Assets Collection, Content Creation.</p>
-              <Link href="/portfolio/project2">
+              <h3 className={styles.h3}>Timezone</h3>
+              <p className={styles.p}>This is a simple timezone API showing the current time in a selected timezone.</p>
+              <Link href="/portfolio">
                 <button className="btn btn-outline-primary">Learn More</button>
               </Link>
             </div>
