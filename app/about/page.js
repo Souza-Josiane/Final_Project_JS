@@ -40,7 +40,7 @@ export default function About() {
                     <h2 className={styles.h2}>Skills and Expertise</h2>
                     <div className={styles.skillsContainer}>
                         <ul className={styles.skillsAbout}>
-                            <li>HTML 5 and CSS</li>
+                            <li>HTML 5 &amp; CSS</li>
                             <li>Java</li>
                             <li>Python</li>
                             <li>Relational Database</li>

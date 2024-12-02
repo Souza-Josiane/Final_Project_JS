@@ -71,12 +71,12 @@ export default function Home() {
         </section>
 
         <section className={styles.skillsHome}>
-          <h2 className={styles.h2}>Skills & Technologies</h2>
+          <h2 className={styles.h2}>Skills &amp; Technologies</h2>
           <div className={styles.skillsListHome}>
             <div>React</div>
             <div>Node.js</div>
             <div>Next.js</div>
-            <div>HTML & CSS</div>
+            <div>HTML &amp; CSS</div>
           </div>
         </section>
 
