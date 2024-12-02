@@ -10,7 +10,7 @@ export default function Logo() {
     return (
         <Link href="/">
             <Image
-                src="/logo.png"
+                src="/Logo.png"
                 width={80}
                 height={80}
                 loading="lazy"
