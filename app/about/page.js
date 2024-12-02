@@ -4,6 +4,7 @@
 
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import styles from '/styles/About.module.css';
 import Navbar from "../components/Navbar";
 import Navfooter from "../components/Navfooter";
@@ -15,16 +16,22 @@ export default function About() {
             <Navbar />
             <div className={styles.aboutContainer}>
                 <div className={styles.profileSection}>
-                    <img src="profile.jpeg" alt="Josiane Souza" className={styles.profileImage} />
+                    <Image
+                        src="/profile.jpeg"
+                        width={150}
+                        height={150}
+                        alt="Josiane Souza"
+                        loading="lazy"
+                        className={styles.profileImage} />
                     <div className={styles.bio}>
                         <h1 className={styles.h1}>About Me</h1>
                         <p>
-                            Hello! I'm Josiane, a passionate Back-end Developer with a keen interest in web development technologies like JavaScript, Next.js, and Express.js.
+                            Hello! I am Josiane, a passionate Back-end Developer with a keen interest in web development technologies like JavaScript, Next.js, and Express.js.
                             I thrive on solving complex problems and constantly enhancing my skills to build impactful solutions.
                         </p>
                         <p>
                             I have a strong foundation in back-end development, with experience in working with Java, JavaScript, Python, and relational databases.
-                            Currently, I’m deepening my knowledge of full-stack development with the goal of becoming a well-rounded developer.
+                            Currently, I am deepening my knowledge of full-stack development with the goal of becoming a well-rounded developer.
                         </p>
                     </div>
                 </div>

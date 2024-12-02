@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Home Page</title>
-        <meta name="keywords" content="Next.js, Students, Project" />
-        <meta
-          name="description"
-          content="This is the home page of my Next.js application"
-        />
+        <title>Josiane's Web Development Portfolio</title>
+        <meta name="keywords" content="Next.js, portfolio, technology, web development" />
+        <meta name="description" content="Josiane's Portfolio showcasing projects and blog about technology" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Josiane Nazaria De Souza" />
+        <meta name="language" content="English" />
+        <meta name="location" content="Canada" />
         <link rel="icon" href="/favicon.icon" sizes="any" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,11 +79,11 @@ export default function Home() {
             <div>HTML & CSS</div>
           </div>
         </section>
-        
+
       </main>
       <Navfooter />
-      
+
     </div>
-    
+
   );
 }
