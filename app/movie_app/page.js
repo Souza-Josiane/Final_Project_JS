@@ -1,6 +1,7 @@
 // app/movie_app/page.js
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import styles from '/styles/Home.module.css';
 import Navbar from "../components/Navbar";
 import { useState } from "react";
@@ -33,13 +34,18 @@ export default function Movie_app() {
                 />
                 <button type="submit">Search</button>
                 </form>
+                
                 {movie && (
                     <div>
                         <h2>{movie.Title}</h2>
                         <p><strong>Year:</strong> {movie.Year}</p>
                         <p><strong>Genre:</strong> {movie.Genre}</p>
                         <p><strong>Plot:</strong> {movie.Plot}</p>
-                        <img src={movie.Poster} alt={movie.Title} />
+                        <Image
+                        src={movie.Poster}
+                        width={150}
+                        height={150}
+                        alt={movie.Title} />
                     </div>
                 )}
             </div>
