@@ -130,6 +130,9 @@ export default function Portfolio() {
                                 <>
                                     <h3 className={styles.scraperTitle}>{title}</h3>
                                     <p className={styles.scraperParagraph}>{paragraph}</p>
+                                    <p>Data scraped from:
+                                        <a href="https://en.wikipedia.org/wiki/Timeline_of_programming_languages" target="_blank" rel="noopener noreferrer"> Wikipedia</a>
+                                    </p>
                                 </>
                             )}
                         </div>
