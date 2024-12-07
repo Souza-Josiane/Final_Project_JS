@@ -51,7 +51,7 @@ export default function Portfolio() {
         setTimezoneError(""); // Reset error for timezone form
     
         try {
-            const res = await fetch(`https://worldtimeapi.org/api/timezone/${cityTimezone}`);
+            const res = await fetch(`http://worldtimeapi.org/api/timezone/${cityTimezone}`);
             if (!res.ok) {
                 throw new Error('Timezone not found or invalid city.');
             }
