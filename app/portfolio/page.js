@@ -79,7 +79,7 @@ export default function Portfolio() {
     };
 
     const handleAnotherInputChange = (e) => {
-        setAnotherInput(e.target.value);  // Atualiza o outro estado
+        setAnotherInput(e.target.value);  // Update the other state
     };
 
     // Fetch weather data when user submits city
